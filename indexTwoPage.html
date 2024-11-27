@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction and calculation of functions</title>
+    <link rel="stylesheet" href="styleTwoPage.css">
+</head>
+<body>
+
+<h1>Enter parameters</h1>
+<form id="inputForm">
+    <div class="form-group">
+        <label for="x_min">xₙ (min x):</label>
+        <input type="number" id="x_min" name="x_min" value="-1" required>
+    </div>
+    <div class="form-group">
+        <label for="x_max">xₖ (max x):</label>
+        <input type="number" id="x_max" name="x_max" value="1" required>
+    </div>
+    <div class="form-group">
+        <label for="dx">Δx:</label>
+        <input type="number" id="dx" name="dx" value="0.2" required>
+    </div>
+    <div class="form-group">
+        <label for="y_min">yₙ (min y):</label>
+        <input type="number" id="y_min" name="y_min" value="-2" required>
+    </div>
+    <div class="form-group">
+        <label for="y_max">yₖ (max y):</label>
+        <input type="number" id="y_max" name="y_max" value="2" required>
+    </div>
+    <div class="form-group">
+        <label for="dy">Δy:</label>
+        <input type="number" id="dy" name="dy" value="0.2" required>
+    </div>
+    <div class="form-group">
+        <label for="z">z:</label>
+        <input type="number" id="z" name="z" value="1.32" required>
+    </div>
+    <button type="submit">Calculate</button>
+</form>
+
+
+    <h1>Calculation of functions</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>x</th>
+                <th>y</th>
+                <th>a(x, y, z, b)</th>
+                <th>b(x, y, z)</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script src="calculateFunction.js"></script>
+</body>
+</html>
